@@ -2,10 +2,11 @@ package agh
 
 import java.time.Year
 import org.apache.spark.sql.functions._
+import org.apache.spark.sql.DataFrame
 
 object Movies extends SparkSessionProvider {
 
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]): DataFrame = {
     val path = args(0)
 
     spark.read.format("csv")
