@@ -7,8 +7,4 @@ val params: Array[String] = Array("/FileStore/tables/Files/movies.csv")
 
 // COMMAND ----------
 
-val df = Movies.main(params)
-
-// COMMAND ----------
-
-display(df)
+Movies.main(params)
